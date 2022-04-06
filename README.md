@@ -2,7 +2,8 @@
 
 # Q1.Implement Binary Search?
 
-```function binarySearch(sortedArray, key){
+```javascript 
+    function binarySearch(sortedArray, key){
     let start = 0;
     let end = sortedArray.length - 1;
 
@@ -25,7 +26,8 @@
 
 # Q2.Implement Merge Sort?
 
-```function merge(left, right) {
+```javascript 
+    function merge(left, right) {
     let arr = []   
     while (left.length && right.length) {        
         if (left[0] < right[0]) {
@@ -48,7 +50,8 @@ function mergeSort(array) {
 
 # Q3.Implement Quick Sort?
 
-```function partition(arr, start, end){
+```javascript
+function partition(arr, start, end){
     const pivotValue = arr[end];
     let pivotIndex = start; 
     for (let i = start; i < end; i++) {
@@ -72,7 +75,8 @@ function quickSortRecursive(arr, start, end) {
 
 # Q4.Implement insertion Sort?
 
-```function insertionSort(inputArr) {
+```javascript
+    function insertionSort(inputArr) {
     let n = inputArr.length;
         for (let i = 1; i < n; i++) {   
          let current = inputArr[i];
@@ -88,7 +92,8 @@ function quickSortRecursive(arr, start, end) {
 
 # Q5.Write a program to sort list of strings (similar to that of dictionary)?
 
-```var string = prompt("Please enter a string");
+```javascript
+var string = prompt("Please enter a string");
 var stringArray=string.split(' ');
 stringArray.sort();
 console.log(string);
