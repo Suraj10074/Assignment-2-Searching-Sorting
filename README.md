@@ -1,6 +1,6 @@
 # Assignment-2-Searching-Sorting
 
-# Q1.Implement Binary Search ?
+# Q1.Implement Binary Search?
 
 function binarySearch(sortedArray, key){
     let start = 0;
@@ -23,7 +23,7 @@ function binarySearch(sortedArray, key){
     return -1;
 }
 
-# Q2.Implement Merge Sort
+# Q2.Implement Merge Sort?
 
 function merge(left, right) {
     let arr = []   
@@ -46,7 +46,7 @@ function mergeSort(array) {
   return merge(mergeSort(left),mergeSort(array))
 }
 
-# Q3.Implement Quick Sort
+# Q3.Implement Quick Sort?
 
 function partition(arr, start, end){
     const pivotValue = arr[end];
@@ -70,7 +70,7 @@ function quickSortRecursive(arr, start, end) {
     quickSort(arr, index + 1, end);
 }
 
-# Q4.Implement insertion Sort
+# Q4.Implement insertion Sort?
 
 function insertionSort(inputArr) {
     let n = inputArr.length;
@@ -86,7 +86,7 @@ function insertionSort(inputArr) {
     return inputArr;
 }
 
-# Q5.Write a program to sort list of strings (similar to that of dictionary)
+# Q5.Write a program to sort list of strings (similar to that of dictionary)?
 
 var string = prompt("Please enter a string");
 var stringArray=string.split(' ');
