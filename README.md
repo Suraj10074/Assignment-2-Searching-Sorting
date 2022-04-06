@@ -46,7 +46,7 @@ function mergeSort(array) {
   }
   const left = array.splice(0, half)
   return merge(mergeSort(left),mergeSort(array))
-}
+}```
 
 # Q3.Implement Quick Sort?
 
@@ -62,8 +62,8 @@ function partition(arr, start, end){
     }
     [arr[pivotIndex], arr[end]] = [arr[end], arr[pivotIndex]] 
     return pivotIndex;
-};
-
+};```
+```javascript
 function quickSortRecursive(arr, start, end) {    
     if (start >= end) {
         return;
