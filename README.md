@@ -1,8 +1,8 @@
 # Assignment-2-Searching-Sorting
 
-# Q1.Implement Binary Search?
-
 ```javascript 
+
+# Q1.Implement Binary Search?
     function binarySearch(sortedArray, key){
     let start = 0;
     let end = sortedArray.length - 1;
