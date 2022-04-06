@@ -22,11 +22,9 @@
         }
     }
     return -1;
-}```
+}
 
 # Q2.Implement Merge Sort?
-
-```javascript 
     function merge(left, right) {
     let arr = []   
     while (left.length && right.length) {        
@@ -46,11 +44,9 @@ function mergeSort(array) {
   }
   const left = array.splice(0, half)
   return merge(mergeSort(left),mergeSort(array))
-}```
+}
 
 # Q3.Implement Quick Sort?
-
-```javascript
 function partition(arr, start, end){
     const pivotValue = arr[end];
     let pivotIndex = start; 
@@ -62,8 +58,8 @@ function partition(arr, start, end){
     }
     [arr[pivotIndex], arr[end]] = [arr[end], arr[pivotIndex]] 
     return pivotIndex;
-};```
-```javascript
+};
+
 function quickSortRecursive(arr, start, end) {    
     if (start >= end) {
         return;
@@ -71,11 +67,9 @@ function quickSortRecursive(arr, start, end) {
     let index = partition(arr, start, end);
     quickSort(arr, start, index - 1);
     quickSort(arr, index + 1, end);
-}```
+}
 
 # Q4.Implement insertion Sort?
-
-```javascript
     function insertionSort(inputArr) {
     let n = inputArr.length;
         for (let i = 1; i < n; i++) {   
@@ -88,14 +82,13 @@ function quickSortRecursive(arr, start, end) {
             inputArr[j+1] = current;
         }
     return inputArr;
-}```
+}
 
 # Q5.Write a program to sort list of strings (similar to that of dictionary)?
 
-```javascript
 var string = prompt("Please enter a string");
 var stringArray=string.split(' ');
 stringArray.sort();
 console.log(string);
 console.log(stringArray);
-console.log(stringArray.join(' '));```
+console.log(stringArray.join(' '));
